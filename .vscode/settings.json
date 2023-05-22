@@ -1,0 +1,27 @@
+{
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.unusedImports": true,
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true
+  },
+  "editor.formatOnSaveTimeout": 4000,
+  "editor.insertSpaces": true,
+  "files.trimTrailingWhitespace": true,
+  "isort.args": ["--profile", "black"],
+  "python.formatting.blackArgs": ["-l 120"],
+  "python.linting.flake8Path": "flake8",
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--config", "app/setup.cfg"],
+  "python.formatting.provider": "black",
+  "pythonIndent.trimLinesWithOnlyWhitespace": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
