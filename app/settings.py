@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     """
 
     class Config:
-        env_file = './.env'
+        env_file = "./.env"
 
     APP_NAME: str
     APP_ENV: str

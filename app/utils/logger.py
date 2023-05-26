@@ -3,15 +3,11 @@ import logging
 
 class EndpointFilter(logging.Filter):
     def filter(self, record: logging.LogRecord):
-        return (
-            record.args and len(record.args) >= 3 and record.args[2] != "/health_check"
-        )
+        return record.args and len(record.args) >= 3 and record.args[2] != "/health_check"
 
 
 # create logging formatter
-logFormatter = logging.Formatter(
-    fmt="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
+logFormatter = logging.Formatter(fmt="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 
 # create logger
 logger = logging.getLogger("app")
