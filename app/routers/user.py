@@ -1,5 +1,3 @@
-# *-* Coding: UTF-8 *-*
-
 from fastapi import APIRouter
 
 

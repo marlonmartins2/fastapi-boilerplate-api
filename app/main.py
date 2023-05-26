@@ -1,5 +1,3 @@
-# *-* Coding: UTF-8 *-*
-
 from http import HTTPStatus
 
 import sentry_sdk
