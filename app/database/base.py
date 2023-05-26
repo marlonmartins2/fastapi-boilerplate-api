@@ -5,7 +5,7 @@ from app.settings import settings
 
 class Indices(type):
     """
-    Cria indexs para todas as coleções que herdam essa classe
+    Cria index para todas as coleções que herdam essa classe
     """
 
     def __init__(cls, *args, **kwargs):

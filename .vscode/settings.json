@@ -6,7 +6,8 @@
       "source.unusedImports": true,
       "source.fixAll": true
     },
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "editor.formatOnSaveTimeout": 4000,
   "editor.insertSpaces": true,
@@ -16,7 +17,7 @@
   "python.linting.flake8Path": "flake8",
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": ["--config", "app/setup.cfg"],
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "none",
   "pythonIndent.trimLinesWithOnlyWhitespace": true,
   "python.analysis.diagnosticSeverityOverrides": {
     "reportMissingImports": "none"
