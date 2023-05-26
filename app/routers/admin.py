@@ -25,7 +25,7 @@ def get_user(user_id: str):
         )
     elif not user.get("is_admin"):
         return JSONResponse(
-            status_code=status.HTTP_401_UNAUTHORIZED,
+            status_code=status.HTTP_400_BAD_REQUEST,
             content={
                 "message": "Usuário não é admin",
                 "user_id": user_id,
